@@ -5,14 +5,14 @@ var link = $('.modal-link'),
 
 
 link.click(function(){
-    overlay.show();
-    popup.show();
+    overlay.fadeIn();
+    popup.toggleClass('popup-active');
 });
 close.click(function(){
-    overlay.hide();
-    popup.hide();
+    overlay.fadeOut();
+    popup.toggleClass('popup-active');
 });
 overlay.click(function(){
-    overlay.hide();
-    popup.hide();
+    overlay.fadeOut();
+    popup.toggleClass('popup-active');
 });
